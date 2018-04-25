@@ -6,10 +6,14 @@ body
 
 .grid
   display: grid
+  font-size: 4rem
   grid-template-columns: 1fr 1fr 1fr
   grid-template-rows: 1fr 1fr 1fr
   height: 100%
 
   > *
+    align-items: center
+    display: flex
+    justify-content: center
     &:nth-child(even)
       background-color: #ccc
