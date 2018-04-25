@@ -204,12 +204,12 @@
     },
     "layout.jadelet": {
       "path": "layout.jadelet",
-      "content": ".grid\n  .e1\n  .e2\n  .e3\n  .e4\n  .e5\n  .e6\n  .e7\n  .e8\n  .e9\n",
+      "content": ".grid\n  .e1 a\n  .e2 b\n  .e3 c\n  .e4 d\n  .e5 e\n  .e6 f\n  .e7 g\n  .e8 h\n  .e9 i\n",
       "mode": "100644"
     },
     "style.styl": {
       "path": "style.styl",
-      "content": "html, body\n  height: 100%\n\nbody\n  margin: 0\n\n.grid\n  display: grid\n  grid-template-columns: 1fr 1fr 1fr\n  grid-template-rows: 1fr 1fr 1fr\n  height: 100%\n\n  > *\n    &:nth-child(even)\n      background-color: #ccc\n",
+      "content": "html, body\n  height: 100%\n\nbody\n  margin: 0\n\n.grid\n  display: grid\n  font-size: 4rem\n  grid-template-columns: 1fr 1fr 1fr\n  grid-template-rows: 1fr 1fr 1fr\n  height: 100%\n\n  > *\n    align-items: center\n    display: flex\n    justify-content: center\n    &:nth-child(even)\n      background-color: #ccc\n",
       "mode": "100644"
     }
   },
@@ -221,12 +221,12 @@
     },
     "layout": {
       "path": "layout",
-      "content": "module.exports = function(data) {\n  \"use strict\";\n  return (function() {\n    var __root;\n    __root = require(\"/lib/jadelet-runtime\")(this);\n    __root.buffer(__root.element(\"div\", this, {\n      \"class\": [\"grid\"]\n    }, function(__root) {\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e1\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e2\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e3\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e4\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e5\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e6\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e7\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e8\"]\n      }, function(__root) {}));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e9\"]\n      }, function(__root) {}));\n    }));\n    return __root.root;\n  }).call(data);\n};\n",
+      "content": "module.exports = function(data) {\n  \"use strict\";\n  return (function() {\n    var __root;\n    __root = require(\"/lib/jadelet-runtime\")(this);\n    __root.buffer(__root.element(\"div\", this, {\n      \"class\": [\"grid\"]\n    }, function(__root) {\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e1\"]\n      }, function(__root) {\n        __root.buffer(\"a\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e2\"]\n      }, function(__root) {\n        __root.buffer(\"b\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e3\"]\n      }, function(__root) {\n        __root.buffer(\"c\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e4\"]\n      }, function(__root) {\n        __root.buffer(\"d\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e5\"]\n      }, function(__root) {\n        __root.buffer(\"e\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e6\"]\n      }, function(__root) {\n        __root.buffer(\"f\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e7\"]\n      }, function(__root) {\n        __root.buffer(\"g\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e8\"]\n      }, function(__root) {\n        __root.buffer(\"h\\n\");\n      }));\n      __root.buffer(__root.element(\"div\", this, {\n        \"class\": [\"e9\"]\n      }, function(__root) {\n        __root.buffer(\"i\\n\");\n      }));\n    }));\n    return __root.root;\n  }).call(data);\n};\n",
       "type": "blob"
     },
     "style": {
       "path": "style",
-      "content": "module.exports = \"html,\\nbody {\\n  height: 100%;\\n}\\nbody {\\n  margin: 0;\\n}\\n.grid {\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr;\\n  grid-template-rows: 1fr 1fr 1fr;\\n  height: 100%;\\n}\\n.grid > *:nth-child(even) {\\n  background-color: #ccc;\\n}\\n\";",
+      "content": "module.exports = \"html,\\nbody {\\n  height: 100%;\\n}\\nbody {\\n  margin: 0;\\n}\\n.grid {\\n  display: grid;\\n  font-size: 4rem;\\n  grid-template-columns: 1fr 1fr 1fr;\\n  grid-template-rows: 1fr 1fr 1fr;\\n  height: 100%;\\n}\\n.grid > * {\\n  align-items: center;\\n  display: flex;\\n  justify-content: center;\\n}\\n.grid > *:nth-child(even) {\\n  background-color: #ccc;\\n}\\n\";",
       "type": "blob"
     },
     "lib/jadelet-runtime": {
