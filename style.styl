@@ -1,0 +1,15 @@
+html, body
+  height: 100%
+
+body
+  margin: 0
+
+.grid
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr
+  height: 100%
+
+  > *
+    &:nth-child(even)
+      background-color: #ccc
